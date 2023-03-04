@@ -44,6 +44,23 @@ a:visited {
   display: grid;
   grid-template: 1fr 1.25fr / 2fr 1fr;
 }
+.search {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+}
+input {
+  width: 70%;
+  border-radius: 10px;
+  border: none;
+  background-color: whitesmoke;
+}
+.header > #icons {
+  background-color: wheat;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 .content {
   padding: 20px;
