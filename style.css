@@ -9,6 +9,10 @@ body {
   grid-template: 1fr/ 1fr 4.5fr;
 }
 
+:root {
+  --color1: white;
+}
+
 .dashboard {
   background-color: silver;
   display: grid;
@@ -58,8 +62,27 @@ input {
 .header > #icons {
   background-color: wheat;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  gap: 7%;
   align-items: center;
+}
+.profile {
+  background-color: #fff;
+  display: flex;
+  gap: 5%;
+  align-items: center;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn {
+  color: var(--color1);
+  border: 1px solid rgb(2, 82, 114);
+  border-radius: 25px;
+  background-color: skyblue;
+  padding: 2% 7%;
 }
 
 .content {
