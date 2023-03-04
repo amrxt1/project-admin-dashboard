@@ -1,0 +1,42 @@
+html {
+  height: 100vh;
+  width: auto;
+}
+body {
+  margin: 0;
+  height: 100%;
+  display: grid;
+  grid-template: 1fr/ 1fr 4.5fr;
+}
+
+.dashboard {
+  background-color: silver;
+}
+
+.main {
+  background-color: brown;
+  display: grid;
+  grid-template: 150px 1fr / 1fr;
+}
+.header {
+  background-color: salmon;
+  padding: 1.5% 2%;
+  gap: 10px;
+  display: grid;
+  grid-template: 1fr 1.25fr / 2fr 1fr;
+}
+
+.content {
+  padding: 20px;
+  display: grid;
+  grid-template: 1fr / 2.5fr 1fr;
+  gap: 20px;
+}
+
+.projects {
+  background-color: burlywood;
+}
+
+.sidebar {
+  background-color: seashell;
+}
