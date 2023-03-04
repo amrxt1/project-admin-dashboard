@@ -11,6 +11,25 @@ body {
 
 .dashboard {
   background-color: silver;
+  display: grid;
+  grid-template: auto auto auto 1fr / 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.dashboard > ul > li {
+  line-height: 1.75rem;
+  list-style: none;
+  font-size: 1.25rem;
+}
+.dashboard > ul > li > a {
+  text-decoration-line: none;
+}
+a:visited {
+  color: inherit;
 }
 
 .main {
