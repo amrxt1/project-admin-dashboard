@@ -61,8 +61,10 @@ a:visited {
 input {
   background-color: var(--bg-color);
   width: 70%;
-  border-radius: 10px;
+  border-radius: 20px;
   border: none;
+  padding: 5px 14px;
+  font-size: 0.95rem;
 }
 .header > #icons {
   display: flex;
@@ -165,4 +167,9 @@ input {
 .trending-element {
   display: flex;
   gap: 15px;
+}
+
+/* explicit styles */
+.bold {
+  font-weight: 600;
 }
