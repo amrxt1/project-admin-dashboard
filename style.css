@@ -25,6 +25,20 @@ body {
 
   color: var(--primary-color);
 }
+#dashboard {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#dashboard > img {
+  width: 3rem;
+  color: white;
+}
+
+li > a > img {
+  width: 1.3rem;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -35,6 +49,9 @@ ul {
   font-size: 1.25rem;
 }
 .dashboard > ul > li > a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   text-decoration-line: none;
 }
 a:visited {
@@ -46,6 +63,7 @@ a:visited {
   display: grid;
   grid-template: 150px 1fr / 1fr;
 }
+
 .header {
   background-color: var(--primary-color);
   padding: 1.5% 2%;
