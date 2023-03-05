@@ -18,6 +18,9 @@ body {
   --bg-color: #cbd5e1;
   --icon: #34d399;
 }
+a {
+  text-decoration-line: none;
+}
 
 .dashboard {
   background-color: var(--secondary-color);
@@ -47,7 +50,7 @@ ul {
   padding: 0;
 }
 .dashboard > ul > li {
-  line-height: 1.75rem;
+  line-height: 2rem;
   list-style: none;
   font-size: 1.25rem;
 }
@@ -55,7 +58,6 @@ ul {
   display: flex;
   align-items: center;
   gap: 1rem;
-  text-decoration-line: none;
   font-weight: 600;
 }
 a:visited {
@@ -101,6 +103,13 @@ input {
   gap: 2%;
   align-items: center;
 }
+.profile-link > a {
+  display: flex;
+  align-content: center;
+  font-size: 1.75rem;
+  gap: 4px;
+}
+
 .btns {
   display: flex;
   align-items: center;
