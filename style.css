@@ -10,15 +10,20 @@ body {
 }
 
 :root {
-  --color1: white;
+  --primary-color: #fafaf9;
+  --secondary-color: #0284c7;
+  --accent-color: #facc15;
+  --bg-color: #cbd5e1;
 }
 
 .dashboard {
-  background-color: silver;
+  background-color: var(--secondary-color);
   display: grid;
   grid-template: auto auto auto 1fr / 1fr;
   gap: 20px;
   padding: 20px;
+
+  color: var(--primary-color);
 }
 ul {
   margin: 0;
@@ -37,12 +42,12 @@ a:visited {
 }
 
 .main {
-  background-color: brown;
+  background-color: var(--bg-color);
   display: grid;
   grid-template: 150px 1fr / 1fr;
 }
 .header {
-  background-color: salmon;
+  background-color: var(--primary-color);
   padding: 1.5% 2%;
   gap: 10px;
   display: grid;
@@ -54,20 +59,18 @@ a:visited {
   gap: 2%;
 }
 input {
+  background-color: var(--bg-color);
   width: 70%;
   border-radius: 10px;
   border: none;
-  background-color: whitesmoke;
 }
 .header > #icons {
-  background-color: wheat;
   display: flex;
   justify-content: flex-end;
   gap: 7%;
   align-items: center;
 }
 .profile {
-  background-color: #fff;
   display: flex;
   gap: 5%;
   align-items: center;
@@ -78,10 +81,9 @@ input {
   justify-content: space-between;
 }
 .btn {
-  color: var(--color1);
-  border: 1px solid rgb(2, 82, 114);
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
   border-radius: 25px;
-  background-color: skyblue;
   padding: 2% 7%;
 }
 
@@ -91,9 +93,8 @@ input {
   grid-template: 1fr / 2.5fr 1fr;
   gap: 20px;
 }
-
 .projects {
-  background-color: burlywood;
+  color: inherit;
 }
 
 .heading {
@@ -110,6 +111,7 @@ input {
 .card {
   border: 1px solid gray;
   border-radius: 10px;
+  background-color: var(--primary-color);
 
   padding: 4% 7%;
   display: grid;
@@ -119,7 +121,7 @@ input {
 }
 
 .sidebar {
-  background-color: seashell;
+  color: inherit;
 }
 
 .sidebar > .heading {
@@ -128,7 +130,9 @@ input {
 .announcements {
   display: grid;
   gap: 5px;
+
   border: 1px solid gray;
+  background-color: var(--primary-color);
   border-radius: 10px;
   padding: 5% 5%;
   margin: 20px 0px;
@@ -140,7 +144,7 @@ input {
 
 .separator {
   height: 1px;
-  background-color: goldenrod;
+  background-color: var(--bg-color);
 }
 
 .announcement > p {
@@ -156,8 +160,9 @@ input {
 
   border: 1px solid gray;
   border-radius: 10px;
+  background-color: var(--primary-color);
 }
 .trending-element {
   display: flex;
-  gap: 5px;
+  gap: 15px;
 }
