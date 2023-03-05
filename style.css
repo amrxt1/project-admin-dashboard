@@ -14,6 +14,7 @@ body {
   --secondary-color: #0284c7;
   --accent-color: #facc15;
   --bg-color: #cbd5e1;
+  --icon: #34d399;
 }
 
 .dashboard {
@@ -176,10 +177,13 @@ input {
   background-color: var(--bg-color);
   margin: 10px 0px;
 }
-
+.announcement:first-child {
+  font-size: 0.95rem;
+}
 .announcement > p {
   margin: 0;
   padding: 0;
+  font-size: 0.9rem;
 }
 
 .trending {
@@ -197,7 +201,20 @@ input {
   align-items: center;
   gap: 15px;
 }
+.trending-element > img {
+  width: 50px;
+  background-color: var(--icon);
+  border-radius: 50%;
+  padding: 2px;
+}
+#username {
+  font-size: 0.95rem;
+}
 
+.trending-element > div {
+  display: grid;
+  gap: 3px;
+}
 /* explicit styles */
 .bold {
   font-weight: 600;
