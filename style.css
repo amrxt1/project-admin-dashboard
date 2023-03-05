@@ -121,11 +121,6 @@ input {
   color: inherit;
 }
 
-.heading {
-  font-weight: 600;
-  margin-left: 20px;
-  font-size: 2rem;
-}
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -144,7 +139,15 @@ input {
   height: 150px;
 }
 .card > .bold {
-  font-size: 1.1rem;
+  font-size: 1.125rem;
+}
+.card > div:last-child > img {
+  width: 1.5rem;
+}
+.card > div:last-child {
+  justify-self: end;
+  display: flex;
+  gap: 10px;
 }
 
 .sidebar {
@@ -208,4 +211,15 @@ input {
 .pfp {
   background-color: var(--accent-color);
   border-radius: 50%;
+}
+.heading {
+  font-weight: 600;
+  margin-left: 20px;
+  font-size: 1.6rem;
+}
+.card > .text,
+.announcement > p,
+.trending-element > div > div:nth-child(2) {
+  font-weight: 200;
+  color: gray;
 }
